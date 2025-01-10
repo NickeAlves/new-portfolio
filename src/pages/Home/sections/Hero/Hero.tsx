@@ -4,6 +4,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import "../../../../styles/style.css";
 
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
@@ -23,6 +24,23 @@ const Hero = () => {
     width: "75%",
     borderRadius: "50%",
     border: `1px solid ${theme.palette.primary.contrastText}`,
+  }));
+
+  const StrongText = styled("strong")(({ theme }) => ({
+    fontWeight: 800,
+    color: theme.palette.primary.main,
+    fontSize: "2rem",
+    letterSpacing: "0.1rem",
+    position: "relative",
+    overflow: "hidden",
+    background: theme.palette.background.default,
+    padding: "0.2rem 0.5rem",
+    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+    transition: "color 0.3s ease, transform 0.3s ease",
+    "&:hover": {
+      color: theme.palette.secondary.main,
+      transform: "scale(1.1)",
+    },
   }));
 
   return (
@@ -54,7 +72,7 @@ const Hero = () => {
                 variant="h2"
                 textAlign="center"
               >
-                I'm a Backend Developer
+                I'm a <StrongText> Backend Developer </StrongText>
               </Typography>
               <Grid
                 container
