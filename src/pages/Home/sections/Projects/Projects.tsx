@@ -1,5 +1,5 @@
-import { Container, styled } from "@mui/material";
-import "../../../../styles/style.css";
+import { styled, Typography } from "@mui/material";
+import NavBar from "../../../../components/NavBar/NavBar";
 
 const Projects = () => {
   const StyledProjects = styled("div")(({ theme }) => ({
@@ -17,10 +17,9 @@ const Projects = () => {
 
   return (
     <>
+      <NavBar />
       <StyledProjects>
-        <Container>
-          <p>fnudia</p>
-        </Container>
+        <Typography> sjhfa</Typography>
       </StyledProjects>
     </>
   );

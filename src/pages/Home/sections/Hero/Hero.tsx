@@ -4,7 +4,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
-import "../../../../styles/style.css";
+import "../../../../style/style.css";
 
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
