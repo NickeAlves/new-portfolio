@@ -70,9 +70,16 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={() => console.log("Download")}>
+                  <StyledButton
+                    onClick={() =>
+                      window.open(
+                        "https://drive.google.com/file/d/1dSAg4YY5kng8vOy2e12y-GAbHqCpibD8/view?usp=sharing",
+                        "_blank"
+                      )
+                    }
+                  >
                     <DownloadIcon />
-                    <Typography>Download CV</Typography>
+                    <Typography>View resume</Typography>
                   </StyledButton>
                 </Grid>
                 <Grid
