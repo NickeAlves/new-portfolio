@@ -89,7 +89,14 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={() => console.log("Email")}>
+                  <StyledButton
+                    onClick={() =>
+                      window.open(
+                        "https://linktr.ee/nicke.rodrigues1125",
+                        "_blank"
+                      )
+                    }
+                  >
                     <EmailIcon></EmailIcon>
                     <Typography>Contact me</Typography>
                   </StyledButton>
