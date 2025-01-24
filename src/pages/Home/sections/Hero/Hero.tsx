@@ -60,19 +60,19 @@ const Hero = () => {
             </Grid>
             <Grid item xs={12} md={7}>
               <Typography
-                color="primary.contrastText"
+                color="#4f8e3e"
                 variant="h1"
                 textAlign="center"
                 pb={2}
               >
-                Nicolas Alves
+                Hello!
               </Typography>
               <Typography
                 color="primary.contrastText"
                 variant="h2"
                 textAlign="center"
               >
-                I'm a <StrongText> Backend Developer </StrongText>
+                I'm Nicolas, <StrongText> Backend Developer </StrongText>
               </Typography>
               <Grid
                 container
